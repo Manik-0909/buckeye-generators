@@ -1,3 +1,132 @@
-:root{
-    --primary-color:#1F2937;
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Variables */
+:root {
+   --primary-color: #1f2937;
+   --secondary-color: #b8fd34;
+   --paragraph-color: #a5b2b8;
+   --body-color: #f6f3ff;
+   --cta-bgcolor: #a78bfa;
+   --border-color: #dfe1e5;
+   --light-gray-color: #f6f6f6;
+   --shadow: 0 0 10px rgba(167, 139, 250, 0.15);
+   --letter-spacing: 0.28px;
+   --main-heading: 44px;
+   --sub-heading1: 36px;
+   --sub-heading2: 24px;
+   --fs-20: 20px;
+   --fs-18: 18px;
+   --container-max-w: 1400px;
+}
+
+*,
+html {
+   color: var(--primary-color) !important;
+   letter-spacing: var(--letter-spacing);
+   scroll-behavior: smooth;
+}
+
+body {
+   font-size: 1rem;
+   font-family: "Manrope", sans-serif;
+   min-height: 100vh;
+   background: var(--body-color);
+}
+
+/* Common CSS Classes */
+.heading-font {
+   font-family: "Sora", sans-serif;
+}
+
+.max-w-xxl {
+   max-width: var(--container-max-w);
+   margin-inline: auto;
+}
+
+.navbar-brand {
+   width: 186px;
+}
+
+.primary-bg {
+   background: var(--primary-color);
+}
+
+header .nav-link {
+   font-family: "Sora", sans-serif;
+}
+
+header .nav-link.active {
+   background: var(--secondary-color) !important;
+}
+
+header .nav-link:hover {
+   background: var(--light-gray-color);
+   transition: all 0.5s;
+}
+
+.offcanvas-footer {
+   font-size: 12px;
+   border-top: 1px solid var(--border-color);
+}
+
+.custom-shadow {
+   box-shadow: var(--shadow);
+}
+
+/* Page Loading CSS  */
+.loader-animation {
+   animation: loader 1s linear 0s 1 forwards;
+}
+
+@keyframes loader {
+   0% {
+      transform: scale(0);
+   }
+   25% {
+      transform: scale(0.7);
+   }
+   50% {
+      transform: scale(1.4);
+   }
+   75% {
+      transform: scale(2.1);
+   }
+   100% {
+      transform: scale(2.8);
+   }
+}
+
+/* Button's CSS */
+.primary-btn {
+   background: var(--primary-color) !important;
+   color: var(--secondary-color) !important;
+   font-family: "Sora", sans-serif;
+   width: fit-content;
+}
+
+.primary-btn:hover {
+   filter: brightness(1.15);
+   transition: all 0.5s;
+}
+
+.btn-close {
+   background: url(../img/icon/ic-close.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 18px;
+}
+
+/* Media Queries */
+
+/* For Small Screens (Mobile) */
+@media only screen and (max-width: 576px) {
+   .logo {
+      width: 115px;
+   }
+
+   .navbar-brand {
+      width: auto;
+   }
 }

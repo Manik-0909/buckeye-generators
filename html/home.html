@@ -3,7 +3,137 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Website Favicon  -->
+      <link rel="icon" href="../img/favicon.svg" />
+      <!-- Bootstrap CSS File -->
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <!-- Common Element CSS File -->
+      <link rel="stylesheet" href="../css/common.css" />
+      <!-- Custom CSS File -->
+      <link rel="stylesheet" href="../css/style.css" />
       <title>Buckeye Generators | Generac Power Systems</title>
    </head>
-   <body></body>
+   <body>
+      <!-- Header Start -->
+      <header class="bg-white py-2 px-3 position-sticky top-0 custom-shadow">
+         <!-- Navigation Bar -->
+         <nav class="navbar navbar-expand-lg p-0 max-w-xxl">
+            <div class="container-fluid p-0">
+               <a class="navbar-brand" href="../html/home.html">
+                  <img
+                     src="../img/logo.svg"
+                     alt="Logo"
+                     class="img-fluid logo"
+                  />
+               </a>
+               <button
+                  class="navbar-toggler border-0 shadow-none p-0"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+               >
+                  <img src="../img/icon/ic-toggle-menu.svg" alt="" width="26" />
+               </button>
+               <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+               >
+                  <div class="offcanvas-header">
+                     <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img
+                           src="../img/logo.svg"
+                           alt="Logo"
+                           class="img-fluid logo"
+                        />
+                     </div>
+                     <button
+                        type="button"
+                        class="btn-close shadow-none border-0 opacity-100"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                     ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                     <ul
+                        class="navbar-nav justify-content-center align-items-lg-center gap-xl-3 gap-2 flex-grow-1 pe-3"
+                     >
+                        <li class="nav-item">
+                           <a
+                              class="nav-link px-4 py-2 rounded-pill fw-semibold active"
+                              aria-current="page"
+                              href="../html/home.html"
+                              >Home</a
+                           >
+                        </li>
+                        <li class="nav-item">
+                           <a
+                              class="nav-link px-4 py-2 rounded-pill fw-semibold"
+                              href="#"
+                              >About Us</a
+                           >
+                        </li>
+                        <li class="nav-item">
+                           <a
+                              class="nav-link px-4 py-2 rounded-pill fw-semibold"
+                              href="#"
+                              >Products</a
+                           >
+                        </li>
+                        <li class="nav-item">
+                           <a
+                              class="nav-link px-4 py-2 rounded-pill fw-semibold"
+                              href="#"
+                              >Contact Us</a
+                           >
+                        </li>
+                     </ul>
+                     <a
+                        href="tel:4408557595"
+                        class="text-decoration-none btn primary-btn py-2 px-4 rounded-pill d-flex align-items-center gap-2 mt-lg-0 mt-4"
+                     >
+                        <img src="../img/icon/ic-phone.svg" alt="Phone Icon" />
+                        4408557595</a
+                     >
+                  </div>
+
+                  <div class="offcanvas-footer text-center d-lg-none d-block">
+                     <p class="px-3 py-2 mb-0">
+                        &copy;2025
+                        <span class="fw-semibold">Buckeye Generators</span> -
+                        All Rights Reserved
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Section Start -->
+      <section class="max-w-xxl">
+         <div class="row">
+            <div class="col-6">Hello</div>
+         </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- Page Loading Section Start -->
+      <section
+         id="page-loader"
+         class="position-fixed top-0 start-0 w-100 min-vh-100 primary-bg d-flex justify-content-center align-items-center"
+         style="z-index: 9999"
+      >
+         <img src="../img/favicon.svg" alt="Logo" class="loader-animation" />
+      </section>
+      <!-- Page Loading Section End -->
+
+      <!-- JavaScript Scripts -->
+      <script src="../js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
+   </body>
 </html>
