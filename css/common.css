@@ -15,7 +15,8 @@
    --letter-spacing: 0.28px;
    --main-heading: 44px;
    --sub-heading1: 36px;
-   --sub-heading2: 24px;
+   --sub-heading2: 30px;
+   --sub-heading3: 24px;
    --fs-20: 20px;
    --fs-18: 18px;
    --container-max-w: 1400px;
@@ -53,6 +54,14 @@ body {
    background: var(--primary-color);
 }
 
+.secondary-text {
+   color: var(--secondary-color) !important;
+}
+
+.paragraph-text {
+   color: var(--paragraph-color) !important;
+}
+
 header .nav-link {
    font-family: "Sora", sans-serif;
 }
@@ -73,6 +82,75 @@ header .nav-link:hover {
 
 .custom-shadow {
    box-shadow: var(--shadow);
+}
+
+.main-heading {
+   font-size: var(--main-heading);
+}
+
+.sub-heading1 {
+   font-size: var(--sub-heading1);
+}
+
+.fs-18 {
+   font-size: var(--fs-18);
+}
+
+.fs-20 {
+   font-size: 20px;
+}
+
+footer {
+   padding-top: 150px;
+   margin-top: -90px;
+}
+
+footer .nav-link {
+   width: fit-content;
+   word-break: break-word;
+}
+
+footer .nav-link:hover {
+   color: var(--secondary-color) !important;
+   transition: all 0.3s;
+}
+
+.cursor-pointer {
+   cursor: pointer;
+}
+
+.social-links a {
+   width: 40px;
+   height: 40px;
+}
+
+.marquee-wrapper {
+   width: 100%;
+   overflow: hidden;
+   background-color: #f9f9f9;
+   padding: 10px 0;
+}
+
+.marquee-track {
+   display: flex;
+   width: max-content;
+   animation: scroll 20s linear infinite;
+}
+
+.marquee-content {
+   white-space: nowrap;
+   padding-right: 100px; /* Space between repeats */
+   font-size: 16px;
+   color: #333;
+}
+
+@keyframes scroll {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-50%);
+   }
 }
 
 /* Page Loading CSS  */
@@ -111,6 +189,19 @@ header .nav-link:hover {
    transition: all 0.5s;
 }
 
+.secondary-btn {
+   background: var(--secondary-color) !important;
+   color: var(--primary-color) !important;
+   font-family: "Sora", sans-serif;
+   width: fit-content;
+   text-transform: capitalize;
+}
+
+.secondary-btn:hover {
+   filter: brightness(1.15);
+   transition: all 0.5s;
+}
+
 .btn-close {
    background: url(../img/icon/ic-close.svg);
    background-repeat: no-repeat;
@@ -120,6 +211,21 @@ header .nav-link:hover {
 
 /* Media Queries */
 
+/* For Medium Screens (Tablet) */
+@media only screen and (max-width: 992px) {
+   .main-heading {
+      font-size: var(--sub-heading1);
+   }
+
+   .sub-heading1 {
+      font-size: var(--sub-heading2);
+   }
+
+   .hero-sec .fs-18 {
+      font-size: 1rem;
+   }
+}
+
 /* For Small Screens (Mobile) */
 @media only screen and (max-width: 576px) {
    .logo {
@@ -128,5 +234,13 @@ header .nav-link:hover {
 
    .navbar-brand {
       width: auto;
+   }
+
+   .main-heading {
+      font-size: var(--sub-heading2);
+   }
+
+   .sub-heading1 {
+      font-size: var(--sub-heading3);
    }
 }

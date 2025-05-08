@@ -1,3 +1,55 @@
-.test {
-   background-color: red;
+.hero-sec {
+   padding-block: 80px;
+}
+
+.cta-sec {
+   background: var(--cta-bgcolor);
+   padding: 80px;
+   max-width: 1200px;
+   width: 90%;
+}
+
+.cta-heading {
+   font-size: var(--sub-heading1);
+   line-height: 3.25rem;
+}
+
+.cta-sec .effect-left {
+   top: -60%;
+   left: -15%;
+}
+
+.cta-sec .effect-right {
+   bottom: -60%;
+   right: -15%;
+}
+
+/* Media Queries */
+
+/* For Medium Screens (Tablet) */
+@media only screen and (max-width: 768px) {
+   .cta-sec {
+      padding: 80px 40px;
+   }
+
+   .cta-heading {
+      font-size: var(--sub-heading2);
+      line-height: 2.5rem;
+   }
+}
+
+/* For Small Screens (Mobile) */
+@media only screen and (max-width: 576px) {
+   .hero-sec {
+      padding-block: 60px;
+   }
+
+   .cta-sec {
+      padding: 60px 20px;
+   }
+
+   .cta-heading {
+      font-size: var(--sub-heading3);
+      line-height: 2rem;
+   }
 }
