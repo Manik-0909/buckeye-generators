@@ -19,6 +19,7 @@
    --sub-heading3: 24px;
    --fs-20: 20px;
    --fs-18: 18px;
+   --fs-14: 14px;
    --container-max-w: 1400px;
 }
 
@@ -124,35 +125,6 @@ footer .nav-link:hover {
    height: 40px;
 }
 
-.marquee-wrapper {
-   width: 100%;
-   overflow: hidden;
-   background-color: #f9f9f9;
-   padding: 10px 0;
-}
-
-.marquee-track {
-   display: flex;
-   width: max-content;
-   animation: scroll 20s linear infinite;
-}
-
-.marquee-content {
-   white-space: nowrap;
-   padding-right: 100px; /* Space between repeats */
-   font-size: 16px;
-   color: #333;
-}
-
-@keyframes scroll {
-   0% {
-      transform: translateX(0);
-   }
-   100% {
-      transform: translateX(-50%);
-   }
-}
-
 /* Page Loading CSS  */
 .loader-animation {
    animation: loader 1s linear 0s 1 forwards;
@@ -207,6 +179,23 @@ footer .nav-link:hover {
    background-repeat: no-repeat;
    background-position: center;
    background-size: 18px;
+}
+
+/* Testimonial Swiper CSS */
+.swiper {
+   height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+   transform: scale(1.25);
+   background: var(--secondary-color) !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+   bottom: 0px;
 }
 
 /* Media Queries */

@@ -1,5 +1,10 @@
 .hero-sec {
-   padding-block: 80px;
+   padding-block: 80px 120px;
+}
+
+.feature-sec {
+   padding: 80px;
+   transform: translateY(-100px);
 }
 
 .cta-sec {
@@ -24,7 +29,46 @@
    right: -15%;
 }
 
+.products-card:hover {
+   background-color: var(--body-color);
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
+.products-card p {
+   display: -webkit-box;
+   max-width: 100%;
+   height: 65px;
+   margin: 0 auto;
+   line-height: 1.3;
+   -webkit-line-clamp: 3;
+   line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.icon-shadow {
+   width: 48px;
+   height: 48px;
+   background: var(--body-color);
+   border-radius: 50%;
+}
+
+.ic-location {
+   margin-top: -24px;
+   margin-left: 24px;
+   z-index: 1;
+}
+
 /* Media Queries */
+/* For Large Screens (Large Tablet) */
+@media only screen and (max-width: 992px) {
+   .feature-sec {
+      padding: 80px 40px;
+      transform: translateY(-40px);
+   }
+}
 
 /* For Medium Screens (Tablet) */
 @media only screen and (max-width: 768px) {
@@ -35,6 +79,15 @@
    .cta-heading {
       font-size: var(--sub-heading2);
       line-height: 2.5rem;
+   }
+
+   .products-card h5 {
+      font-size: var(--fs-16);
+   }
+
+   .products-card p {
+      font-size: var(--fs-14);
+      height: 57px;
    }
 }
 
