@@ -11,7 +11,7 @@
    --cta-bgcolor: #a78bfa;
    --border-color: #dfe1e5;
    --light-gray-color: #f6f6f6;
-   --shadow: 0 0 10px rgba(167, 139, 250, 0.15);
+   --shadow: 0 0 10px #a78bfa26;
    --letter-spacing: 0.28px;
    --main-heading: 44px;
    --sub-heading1: 36px;
@@ -196,6 +196,15 @@ footer .nav-link:hover {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
    bottom: 0px;
+}
+
+/* Back to top  */
+.back2top {
+   bottom: 16px;
+   right: 16px;
+   width: 54px;
+   height: 54px;
+   z-index: 2;
 }
 
 /* Media Queries */
