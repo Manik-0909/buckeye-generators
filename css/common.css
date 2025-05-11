@@ -125,6 +125,21 @@ footer .nav-link:hover {
    height: 40px;
 }
 
+/* Products Page CSS */
+.carousel-control-prev-icon {
+   background: url(../img/icon/ic-prev.svg);
+   background-repeat: no-repeat;
+   background-size: 30px;
+   opacity: 1 !important;
+}
+
+.carousel-control-next-icon {
+   background: url(../img/icon/ic-next.svg);
+   background-repeat: no-repeat;
+   background-size: 30px;
+   opacity: 1 !important;
+}
+
 /* Page Loading CSS  */
 .loader-animation {
    animation: loader 1s linear 0s 1 forwards;
